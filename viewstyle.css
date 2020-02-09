@@ -1,0 +1,52 @@
+@media(max-width: 929px) {
+  #sketch-parent {
+    width: 600px;
+    height: 400px;
+  }
+}
+@media(min-width: 930px) and (max-width: 1529px) {
+  #sketch-parent {
+    width: 900px;
+    height: 600px;
+  }
+}
+@media(min-width: 1530px) {
+  #sketch-parent {
+    width: 1200px;
+    height: 800px;
+  }
+}
+
+#sketch-parent {
+  margin: 0 auto;
+  position: relative; 
+  margin-top: 3em;
+  padding-bottom: 2em;
+  display: none;
+}
+
+#toolbar {
+  margin: auto;
+  margin-top: 5em;
+  text-align: center;
+  max-width: 500px;
+  max-height: 500px;
+}
+
+#one-more-thing {
+  display: none;
+}
+
+#card-viewing-options {
+  justify-content: space-between;
+  display: none;
+}
+
+.bounding-box {
+  padding: 2em 1em;
+  border: 1px solid #000;
+}
+
+.emphasize {
+  font-weight: 600;
+}

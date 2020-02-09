@@ -1,0 +1,35 @@
+<html>
+  <head>
+    <script src="https://cdn.jsdelivr.net/npm/p5@0.10.2/lib/p5.js"></script>
+    <script src="makesketch.js"></script>
+    <link rel="stylesheet" href="makestyle.css">
+    <link rel="stylesheet" href="800px.css">
+    <title>sendit / make card</title>
+  </head>
+  <body>
+    <div id="request">
+        hello! this website is best viewed with a screen width of over 800px. thanks!
+    </div>
+    <div id="content">
+      <div id="toolbar">
+          <div id = "message-maker">
+            <div><span class="emphasize">make card</span>&nbsp;&nbsp;/&nbsp;&nbsp;<a href="./viewcard.html">view card</a>&nbsp;&nbsp;/&nbsp;&nbsp;<a href="./index.html">home</a></div>
+            <p> enter message to put on card here:</p>
+            <div>
+              <textarea id = "message-input"></textarea>
+              <br/>
+              <button id="save-button">save card</button>
+            </div>
+          </div>
+          <div id="code-field">
+            <div class="emphasize">done! copy and send this blurb to your recipient: <button id="copy-code">copy</button> <span id="copied">copied!</span></div>
+            <div id="message-to-copy">
+              hi, i made you a card! please visit www.sendit.github.io/viewcard.html and enter this code to view your card: 
+              <span id="code-to-copy">code code code lorem ipsum sit amet dolor consecutor he code code code lorem ipsum sit amet dolor consecutor he code code code lorem ipsum sit amet dolor consecutor he code code code lorem ipsum sit amet dolor consecutor he code code code lorem ipsum sit amet dolor consecutor he code code code lorem ipsum sit amet dolor consecutor he</span>
+            </div>
+          </div>
+      </div>
+      <div id="sketch-parent"></div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,36 @@
+<html>
+  <head>
+    <script src="https://cdn.jsdelivr.net/npm/p5@0.10.2/lib/p5.js"></script>
+    <script src="viewsketch.js"></script>
+    <title>sendit / view card</title>
+    <link rel="stylesheet" href="viewstyle.css">
+    <link rel="stylesheet" href="800px.css">
+  </head>
+  <body>
+    <div id="request">
+      hello! this website is best viewed with a screen width of over 800px. thanks!
+    </div>
+    <div id="content">
+      <div id="toolbar">
+        <div id="load-card-box" class="bounding-box">
+          <div><span class="emphasize">view card</span>&nbsp;&nbsp;/&nbsp;&nbsp;<a href="./makecard.html">make card</a>&nbsp;&nbsp;/&nbsp;&nbsp;<a href="./index.html">home</a></div>
+          <p> enter code to load card:</p>
+          <input id="code-input"></input>
+          <button id="load-button">load card</button>
+        </div>
+        <div id="one-more-thing" class="bounding-box">
+          <span class="emphasize">one more thing:</span> <br/> on a laptop? you are invited to treat your laptop like a card! you're encouraged to hold it upside down to view this card
+          <br/><br/>
+          <button id="view-card-now-button">okay</button>
+        </div>
+        <div id="card-viewing-options">
+          <button id="flip-card-button">flip card</button>
+          <a href="./viewcard.html">view another card</a>
+          <a href="./makecard.html">make your own card</a>
+          <a href="./index.html">home</a>
+        </div>
+      </div>
+      <div id="sketch-parent"></div>
+    </div>
+  </body>
+</html>
