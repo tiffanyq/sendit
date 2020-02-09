@@ -10,9 +10,11 @@ body {
   padding: 2em 1em;
   border: 1px solid #000;
 }
+
 #about {
   margin-top: 3em;
 }
+
 #about-title {
   font-weight: 600;
 }
