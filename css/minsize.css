@@ -1,6 +1,6 @@
 /* request that window is at least 800px wide */
 
-@media (max-width: 799px) {
+@media (max-width: 859px) {
   #request {
     display: block;
     padding: 0 1em;
@@ -9,7 +9,7 @@
     display: none;
   }
 }
-@media (min-width: 800px) {
+@media (min-width: 860px) {
   #request {
     display: none;
   }
