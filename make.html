@@ -1,0 +1,38 @@
+<html>
+  <head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.min.js" integrity="sha512-N4kV7GkNv7QR7RX9YF/olywyIgIwNvfEe2nZtfyj73HdjCUkAfOBDbcuJ/cTaN04JKRnw1YG1wnUyNKMsNgg3g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>   
+    <script src="./js/helpers.js"></script>
+    <script src="./js/makesketch.js"></script>
+    <link rel="stylesheet" href="./css/makestyle.css">
+    <link rel="stylesheet" href="./css/minsize.css">
+    <title>sendit / make card</title>
+  </head>
+  <body>
+    <div id="request">
+        hello! this website is best viewed with a screen width of over 860px. thanks!
+    </div>
+    <div id="content">
+        <div id="about">
+            <p id="about-title"> sendit <span id="random-drawing">:)</span></p>
+            <p> a laptop is a big upside down card!!! send someone a big metal card <3</p>
+        </div>
+      <div id="toolbar">
+          <div id = "message-maker" class="emphasize">
+            <p> enter message to put on card:</p>
+            <div>
+              <textarea id = "message-input"></textarea>
+              <br/>
+              <button id="save-button">save card</button>
+            </div>
+          </div>
+          <div id="code-field">
+            <div class="emphasize">done! send this URL to your recipient: <button id="copy-code">copy</button> <span id="copied">copied!</span></div>
+            <div id="url-to-copy">
+            </div>
+          </div>
+      </div>
+      <div id="sketch-parent"></div>
+      <p class="italicize">by design, no data is saved by sendit. view page sources <a href="https://github.com/tiffanyq/sendit" target="_blank">here</a>. made by <a href="https://www.instagram.com/anotherbrowsertab/" target="_blank">anotherbrowsertab</a></p>
+    </div>
+  </body>
+</html>
