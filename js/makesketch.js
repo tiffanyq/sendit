@@ -20,7 +20,7 @@ function setup() {
   const saveButton = document.getElementById("save-button");
   saveButton.addEventListener("click", saveCard);
 
-  let previewTitle = createDiv("Preview");
+  let previewTitle = createDiv("Card Preview");
   previewTitle.position(0,-20);
   previewTitle.parent("sketch-parent");
 
@@ -36,6 +36,10 @@ function draw() {
   rect(0, 0, canvasWidth , canvasHeight);
   message = messageInput.value;
   text(message, offset/2, offset/2, canvasWidth  - offset, canvasHeight - offset);
+  describe(
+    "Black text on a white background. The message is upside down if the device is upright. The message says: "
+    + message
+  );
 }
 
 function windowResized() {
@@ -46,18 +50,18 @@ function windowResized() {
 
 /* prototype for generating code */
 function saveCard() {
-  let code = encodeURI(switchCodeAndMessage(message));
+  let code = encodeURIComponent(switchCodeAndMessage(message)).replace(/\(/g, "%28").replace(/\)/g, "%29");
   const codeField = document.getElementById("code-field");
-  const innerCode = document.getElementById("code-to-copy");
+  const innerCode = document.getElementById("url-to-copy");
   codeField.style.visibility = "visible";
-  innerCode.innerText = code;  
+  innerCode.innerText = "tiffanyq.github.io/sendit?m=" + code;  
   // reset copied button
   const copySuccess = document.getElementById("copied");
   copySuccess.style.visibility = "hidden";
 }
 
 function copyToClipboard() {
-  const wholeMessage = document.getElementById("message-to-copy").innerText;
+  const wholeMessage = document.getElementById("url-to-copy").innerText;
   // copy to clipboard by selecting textarea content
   const temp = document.createElement('textarea');
   temp.value = wholeMessage;
@@ -71,3 +75,21 @@ function copyToClipboard() {
   const copySuccess = document.getElementById("copied");
   copySuccess.style.visibility = "visible";
 }
+
+function hideUrlCopyBox() {
+  const urlBox = document.getElementById("code-field");
+  const copiedMsg = document.getElementById("copied");
+  urlBox.style.visibility = "hidden";
+  copiedMsg.style.visibility = "hidden";
+}
+
+
+
+window.onload = function(e) {
+  setRandomSmiley();
+  const inputBox = document.getElementById("message-input");
+  inputBox.addEventListener("input", hideUrlCopyBox);
+}
+
+
+

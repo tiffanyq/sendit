@@ -42,6 +42,9 @@ const NUMBERS = {
   "9": "4"
 }
 
+// for title: random smiley
+const DRAWINGS = [":)", ":D", "<3", "^_^", "^_~", '<(")', ":]", "=)"];
+
 /* sets canvas and text based on current window width */
 function setCanvasAndTextSize() {
   if (windowWidth > 1529) {
@@ -86,3 +89,14 @@ function switchCodeAndMessage(content) {
   }
   return switchedContent;
 }
+
+function setRandomSmiley() {
+  const drawingDiv = document.getElementById("random-drawing");
+  const i = Math.floor(Math.random() * DRAWINGS.length);
+  drawingDiv.innerText = DRAWINGS[i];
+}
+
+
+
+
+

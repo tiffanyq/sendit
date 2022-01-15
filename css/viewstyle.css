@@ -25,16 +25,11 @@
   display: none;
 }
 
-#toolbar {
+#main {
   margin: auto;
   margin-top: 5em;
-  text-align: center;
   max-width: 500px;
   max-height: 500px;
-}
-
-#one-more-thing {
-  display: none;
 }
 
 #card-viewing-options {
@@ -49,4 +44,9 @@
 
 .emphasize {
   font-weight: 600;
+}
+
+#about-title {
+  font-weight: 600;
+  font-size: 28px;
 }

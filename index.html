@@ -1,8 +1,10 @@
 <html>
   <head>
-    <title>sendit</title>
-    <script src="./js/indexscript.js"></script>
-    <link rel="stylesheet" href="./css/indexstyle.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.min.js" integrity="sha512-N4kV7GkNv7QR7RX9YF/olywyIgIwNvfEe2nZtfyj73HdjCUkAfOBDbcuJ/cTaN04JKRnw1YG1wnUyNKMsNgg3g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>   
+    <script src="./js/helpers.js"></script>
+    <script src="./js/viewsketch.js"></script>
+    <title>sendit / view card</title>
+    <link rel="stylesheet" href="./css/viewstyle.css">
     <link rel="stylesheet" href="./css/minsize.css">
   </head>
   <body>
@@ -10,28 +12,26 @@
       hello! this website is best viewed with a screen width of over 860px. thanks!
     </div>
     <div id="content">
-      <div id="desktop-warning" class="italicize">
-          **this site is best viewed on desktop/tablet**
-      </div>
-      <div id = "bounding-box">
-        <p id="random-drawing">
-          :)
-        </p>
-        <p>welcome to sendit! what would you like to do?</p>
-        <div>
-          <a href="./viewcard.html">view card</a>
-          &nbsp;&nbsp;/&nbsp;&nbsp;
-          <a href="./makecard.html">make card</a>
+        <div id="about">
+            <p id="about-title"> sendit <span id="random-drawing">:)</span></p>
+            <p> a laptop is a big upside down card!!!</p>
+        </div>
+      <div id="main">
+        <div id="one-more-thing" class="bounding-box">
+          <p id="recipient" class="emphasize">someone has sent you a card!</p>
+          <p>on a laptop? you are encouraged to...</p>
+            <ol>
+              <li>make this browser full screen</li>
+              <li>hold your laptop upside down to view this card</li>
+            </ol>
+          <button id="view-card-now-button">okay</button>
+        </div>
+        <div id="card-viewing-options">
+          <button id="flip-card-button">flip card</button>
+          <a href="./make.html">make your own card</a>
         </div>
       </div>
-      <div id="about">
-        <p id="about-title"> about</p>
-        <p> sendit allows you to make and send cards. it plays with laptops' physical resemblance to cards--try viewing one :)</p>
-        <p>how do you feel about sending a card to someone like this vs. sending a physical card? what's the difference between receiving a physical card and using your laptop as one?</p>
-        <p class="italicize">by design, no data is saved by sendit. view page sources <a href="https://github.com/tiffanyq/sendit" target="_blank">here</a>.</p>
-        <br/>
-        <p>contact: <a href="https://www.instagram.com/anotherbrowsertab/" target="_blank">anotherbrowsertab</a></p>
-      </div>
+      <div id="sketch-parent"></div>
     </div>
   </body>
 </html>
